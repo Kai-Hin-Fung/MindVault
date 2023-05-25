@@ -1,4 +1,4 @@
-// Add an event listener to the form with the ID 'video-form'. 
+// Add an event listener to the form with the ID 'video-form'.
 // This will trigger the function when the form is submitted.
 document.getElementById('video-form').addEventListener('submit', function(event) {
     
@@ -9,6 +9,9 @@ document.getElementById('video-form').addEventListener('submit', function(event)
     // Get the value of the input field with the ID 'url'.
     // This should contain the URL the user entered.
     var url = document.getElementById('url').value;
+
+    // Log the URL to the console.
+    console.log('Submitted URL:', url);
 
     // Send a POST request to the '/api/submit' endpoint on the server.
     // The body of the request is a JSON string containing the URL.
